@@ -1,6 +1,7 @@
 import colors from 'vuetify/es5/util/colors';
 import { VuetifyThemeVariant } from 'vuetify/types/services/theme';
 
+// TODO(MD): load from theme(?)
 export default {
     anchor: colors.blue.lighten3,
     primary: colors.blue.darken2,

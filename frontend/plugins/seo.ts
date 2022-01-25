@@ -4,6 +4,7 @@ import { TranslateResult } from 'vue-i18n';
 import { Route } from 'vue-router';
 import { MetaInfo } from 'vue-meta';
 
+// TODO(MD): remove all the hard-coded Paper things here
 const createUtil = (context: Context) => {
     class Seo {
         head(title: string | TranslateResult, description: string | TranslateResult | null, route: Route, image: string | null): MetaInfo {

@@ -40,6 +40,7 @@ export default {
         htmlAttrs: {
             dir: 'ltr',
         },
+        // TODO(MD): meta long name
         titleTemplate: (titleChunk) => (titleChunk ? `${titleChunk} | Hangar` : 'Hangar'),
         meta: [
             { hid: 'charset', charset: 'utf-8' },
@@ -63,6 +64,7 @@ export default {
     css: ['~/assets/main.scss'],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+    // TODO: hangar-theming plugin (?)
     plugins: ['~/plugins/api.ts', '~/plugins/utils.ts', '~/plugins/auth.ts', '~/plugins/perms.ts', '~/plugins/seo.ts'],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
@@ -83,6 +85,7 @@ export default {
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
+        ['~/modules/theming.ts', { themeName: 'hangar-theme-dev' }],
         // https://go.nuxtjs.dev/axios
         '@nuxtjs/axios',
         'cookie-universal-nuxt',
@@ -96,6 +99,7 @@ export default {
 
     // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
     vuetify: {
+        // TODO(MD): overlay-friendly path
         customVariables: ['~/assets/variables.scss'],
         optionsPath: '~/plugins/vuetify.ts',
         treeShake: true,
