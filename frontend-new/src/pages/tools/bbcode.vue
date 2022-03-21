@@ -6,6 +6,7 @@ import { useInternalApi } from "~/composables/useApi";
 import { handleRequestError } from "~/composables/useErrorHandling";
 import { useContext } from "vite-ssr/vue";
 import { useI18n } from "vue-i18n";
+import PageTitle from "~/components/design/PageTitle.vue";
 
 const ctx = useContext();
 const i18n = useI18n();
@@ -24,7 +25,7 @@ async function convertBBCode() {
 </script>
 
 <template>
-  <h1 class="text-2xl font-medium mb-2">BBCode to Markdown converter</h1>
+  <PageTitle>BBCode to Markdown Converter</PageTitle>
 
   <h2 class="text-lg">Enter your BBCode below:</h2>
   <textarea v-model="input" class="rounded-lg w-full min-h-50"></textarea>
