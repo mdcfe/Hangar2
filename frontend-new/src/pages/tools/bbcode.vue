@@ -27,12 +27,12 @@ async function convertBBCode() {
   <h1 class="text-2xl font-medium mb-2">BBCode to Markdown converter</h1>
 
   <h2 class="text-lg">Enter your BBCode below:</h2>
-  <textarea v-model="input" class="rounded-lg w-full"></textarea>
+  <textarea v-model="input" class="rounded-lg w-full min-h-50"></textarea>
 
   <Button class="w-full mb-4 text-lg font-medium" @click="convertBBCode"> Convert </Button>
 
   <h2 class="text-lg">Markdown output</h2>
-  <textarea v-model="output" class="mb-2 rounded-lg w-full"></textarea>
+  <textarea v-model="output" class="mb-2 rounded-lg w-full min-h-50"></textarea>
 
   <h2 class="text-lg">Markdown preview</h2>
   <Markdown :raw="output"></Markdown>
