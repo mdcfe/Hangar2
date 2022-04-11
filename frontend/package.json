@@ -49,7 +49,7 @@
     "@nuxt/typescript-build": "2.1.0",
     "@nuxtjs/dotenv": "1.4.1",
     "@nuxtjs/eslint-config-typescript": "6.0.1",
-    "@nuxtjs/eslint-module": "3.0.2",
+    "@nuxtjs/eslint-module": "3.1.0",
     "@nuxtjs/vuetify": "1.12.3",
     "@types/chartist": "0.11.1",
     "@types/diff-match-patch": "1.0.32",
