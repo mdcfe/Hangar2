@@ -30,7 +30,7 @@
     "cookie-universal-nuxt": "2.1.5",
     "core-js": "3.20.0",
     "diff-match-patch": "1.0.5",
-    "filesize": "8.0.6",
+    "filesize": "9.0.1",
     "jwt-decode": "3.1.2",
     "lodash-es": "4.17.21",
     "lru-cache": "6.0.0",
